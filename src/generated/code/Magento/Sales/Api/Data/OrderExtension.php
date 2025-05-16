@@ -43,78 +43,6 @@ class OrderExtension extends \Magento\Framework\Api\AbstractSimpleObject impleme
     }
 
     /**
-     * @return \Magento\GiftMessage\Api\Data\MessageInterface|null
-     */
-    public function getGiftMessage()
-    {
-        return $this->_get('gift_message');
-    }
-
-    /**
-     * @param \Magento\GiftMessage\Api\Data\MessageInterface $giftMessage
-     * @return $this
-     */
-    public function setGiftMessage(\Magento\GiftMessage\Api\Data\MessageInterface $giftMessage)
-    {
-        $this->setData('gift_message', $giftMessage);
-        return $this;
-    }
-
-    /**
-     * @return string|null
-     */
-    public function getPickupLocationCode()
-    {
-        return $this->_get('pickup_location_code');
-    }
-
-    /**
-     * @param string $pickupLocationCode
-     * @return $this
-     */
-    public function setPickupLocationCode($pickupLocationCode)
-    {
-        $this->setData('pickup_location_code', $pickupLocationCode);
-        return $this;
-    }
-
-    /**
-     * @return int|null
-     */
-    public function getNotificationSent()
-    {
-        return $this->_get('notification_sent');
-    }
-
-    /**
-     * @param int $notificationSent
-     * @return $this
-     */
-    public function setNotificationSent($notificationSent)
-    {
-        $this->setData('notification_sent', $notificationSent);
-        return $this;
-    }
-
-    /**
-     * @return int|null
-     */
-    public function getSendNotification()
-    {
-        return $this->_get('send_notification');
-    }
-
-    /**
-     * @param int $sendNotification
-     * @return $this
-     */
-    public function setSendNotification($sendNotification)
-    {
-        $this->setData('send_notification', $sendNotification);
-        return $this;
-    }
-
-    /**
      * @return \Magento\Tax\Api\Data\OrderTaxDetailsAppliedTaxInterface[]|null
      */
     public function getAppliedTaxes()
@@ -201,6 +129,78 @@ class OrderExtension extends \Magento\Framework\Api\AbstractSimpleObject impleme
     public function setAdditionalItemizedTaxes($additionalItemizedTaxes)
     {
         $this->setData('additional_itemized_taxes', $additionalItemizedTaxes);
+        return $this;
+    }
+
+    /**
+     * @return \Magento\GiftMessage\Api\Data\MessageInterface|null
+     */
+    public function getGiftMessage()
+    {
+        return $this->_get('gift_message');
+    }
+
+    /**
+     * @param \Magento\GiftMessage\Api\Data\MessageInterface $giftMessage
+     * @return $this
+     */
+    public function setGiftMessage(\Magento\GiftMessage\Api\Data\MessageInterface $giftMessage)
+    {
+        $this->setData('gift_message', $giftMessage);
+        return $this;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getPickupLocationCode()
+    {
+        return $this->_get('pickup_location_code');
+    }
+
+    /**
+     * @param string $pickupLocationCode
+     * @return $this
+     */
+    public function setPickupLocationCode($pickupLocationCode)
+    {
+        $this->setData('pickup_location_code', $pickupLocationCode);
+        return $this;
+    }
+
+    /**
+     * @return int|null
+     */
+    public function getNotificationSent()
+    {
+        return $this->_get('notification_sent');
+    }
+
+    /**
+     * @param int $notificationSent
+     * @return $this
+     */
+    public function setNotificationSent($notificationSent)
+    {
+        $this->setData('notification_sent', $notificationSent);
+        return $this;
+    }
+
+    /**
+     * @return int|null
+     */
+    public function getSendNotification()
+    {
+        return $this->_get('send_notification');
+    }
+
+    /**
+     * @param int $sendNotification
+     * @return $this
+     */
+    public function setSendNotification($sendNotification)
+    {
+        $this->setData('send_notification', $sendNotification);
         return $this;
     }
 }
