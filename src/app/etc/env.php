@@ -99,13 +99,14 @@ return [
             'first_lifetime' => '600',
             'bot_first_lifetime' => '60',
             'bot_lifetime' => '7200',
-            'disable_locking' => '0',
+            'disable_locking' => '1',
             'min_lifetime' => '60',
             'max_lifetime' => '2592000',
             'sentinel_master' => '',
             'sentinel_servers' => '',
             'sentinel_connect_retries' => '5',
-            'sentinel_verify_master' => '0'
+            'sentinel_verify_master' => '0',
+            'read_only' => '0'
         ]
     ],
     'lock' => [
